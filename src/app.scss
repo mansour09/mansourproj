@@ -1,0 +1,88 @@
+$green:rgb(29, 252, 0);
+$green2:rgb(0, 215, 230);
+$dark:#343a40;
+* {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+.brand-size {
+    height: 40px;
+    width: 30px;
+}
+
+.my-btn {
+    color: black;
+    background-color: $green;
+    &:hover {
+        color: rgb(59, 59, 59);
+        background-color: $green2;
+        transition: background-color .35s;
+    }
+}
+
+.my-btn-2 {
+    color: white;
+    &:hover {
+        color: $green;
+        background-color: rgb(90, 90, 90);
+        transition: color .5s;
+        transition: background-color .35s;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .my-search-btn {
+        display: none;
+    }
+    .my-search-text {
+        display: none;
+    }
+}
+
+.my-search-btn {
+    color: $green;
+    border: 1px solid $green;
+    background-color: $dark;
+    border-radius: 0;
+    &:hover {
+        color: black;
+        background-color: $green;
+        transition: color .40s;
+        transition: background-color .40s;
+    }
+}
+
+.my-search-text {
+    border-radius: 0 !important;
+    border: none;
+    &:focus {
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+        border: 3px solid $green;
+    }
+}
+
+.displayoff {
+    display: none;
+}
+
+.height-min {
+    height: 4px;
+}
+
+.blur {
+    transition: filter .4s;
+    &:hover {
+        filter: blur(2px);
+        transition: filter .4s;
+    }
+}
+
+.shadow {
+    box-shadow: 2px 0px 5px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
