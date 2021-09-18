@@ -1,11 +1,16 @@
 $green:rgb(29, 252, 0);
 $green2:rgb(0, 215, 230);
 $dark:#343a40;
+@import "../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 * {
     padding: 0;
     margin: 0;
     direction: rtl;
     text-align: right;
+}
+
+.loader {
+    filter: blur(5px);
 }
 
 .brand-size {
