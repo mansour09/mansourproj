@@ -13,10 +13,3 @@ function gotop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-window.onload = function() {
-    setInterval(onloadpic, 1000);
-};
-
-function onloadpic() {
-    document.getElementById("onload").classList.remove("loader");
-}
